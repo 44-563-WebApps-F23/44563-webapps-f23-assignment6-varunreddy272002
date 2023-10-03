@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Author entry
-        </title>
-    </head>
- 
+
+<head>
+    <title>
+        Author entry
+    </title>
+</head>
+
 <body>
 
-<h2>Author entry Varun Kumar Reddy Bhavanam</h2>
+    <h2>Author entry Varun Kumar Reddy Bhavanam</h2>
 
-<form>
     <form>
-        <label for="author_name">The hidden author name</label>
-        <input type="password" id="author_name" name="author_name" value="Dickens"> <br>
-        <label for="user_guess">Guess the author</label>
-        <input type="text" id="user_guess" name="user_guess"> <br>
-        <input type="button" onclick="checkAuthor()" value="Check the guess">
-    </form>
-    <p id="result"> Right/Wrong?</p>
-    <script>
-        let good = 0;
-        let oops = 0;
-        function checkAuthor() {
-            hidden_author_name = document.getElementById("author_name").value
-            user_author_guess = document.getElementById("user_guess").value
-            out = document.getElementById("result")
-            if (hidden_author_name == user_author_guess) {
-                good = good + 1;
-                alert("You got it right");
-                out.innerHTML = `Correct Guess!  good: ${good}`;
+        <form>
+            <label for="author_name">The hidden author name</label>
+            <input type="password" id="author_name" name="author_name" value="Dickens"> <br>
+            <label for="user_guess">Guess the author</label>
+            <input type="text" id="user_guess" name="user_guess"> <br>
+            <input type="button" onclick="checkAuthor()" value="Check the guess">
+        </form>
+        <p id="result"> Right/Wrong?</p>
+        <script>
+            let good = 0;
+            let oops = 0;
+            function checkAuthor() {
+                hidden_author_name = document.getElementById("author_name").value
+                user_author_guess = document.getElementById("user_guess").value
+                out = document.getElementById("result")
+                if (hidden_author_name == user_author_guess) {
+                    good = good + 1;
+                    alert("You got it right");
+                    out.innerHTML = `Correct Guess!  good: ${good}`;
+                }
+                else {
+                    oops = oops + 1;
+                    alert("Sorry");
+                    out.innerHTML = `Wrong Guess! oops: ${oops}`;
+                }
             }
-            else {
-                oops = oops + 1;
-                alert("Sorry");
-                out.innerHTML = `Wrong Guess! oops: ${oops}`;
+        </script>
+
+        <div>
+            <img id="image" src="Bengaluru.jpg" alt="Bengalurucityiamge" value="selectImage()" onclick="selectImage()"
+                width="100px" height="100px">
+        </div>
+
+        <script>
+            let useImage = 1;
+            function selectImage() {
+                switch (useImage) {
+                    case 1:
+                        image.src = "AMARAVATHI.jpg", alt = "Bengalurucityiamge", width = "100px", height = "100px";
+                        useImage++;
+                        break;
+                    case 2:
+                        image.src = "Varanasi.jpg", alt = "Varanasicityiamge", width = "100px", height = "100px";
+                        useImage++;
+                        break;
+                    case 3:
+                        image.src = "Bengaluru.jpg", alt = "Bengalurucityiamge", width = "100px", height = "100px";
+                        useImage++;
+                        break;
+                }
             }
-        }
-    </script>
+
+        </script>
+
 </body>
 
 </html>
-</script>
-
-</body>
-</html> 
