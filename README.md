@@ -2,3 +2,8 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM
 
+[Hostad at author.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-varunreddy272002/author.html)
+
+[Hostad at tips.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-varunreddy272002/tips.html)
+
+[Hostad at cruise.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-varunreddy272002/cruise.html)
